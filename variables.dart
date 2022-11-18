@@ -4,6 +4,7 @@ void main() {
   dynamic_variable();
   nullable_variable();
   final_variable();
+  late_variable();
 }
 
 void var_variable() {
@@ -36,6 +37,7 @@ void dynamic_variable() {
 }
 
 void nullable_variable() {
+  // ?를 붙이면 null도 허용한다는 뜻
   String? daco = "daco";
   print("nullable_variable");
   print(daco.isEmpty);
@@ -55,5 +57,16 @@ void final_variable() {
   final name = "다코";
   final int count = 5;
   print(name);
+  print(count);
+}
+
+/// 데이터를 바로 넣지 않고 나중에 넣음.
+void late_variable() {
+  late final int num;
+  num = 9;
+  print(num);
+  late int count;
+  count = 1;
+  count = 2;
   print(count);
 }
