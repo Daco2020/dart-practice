@@ -3,6 +3,7 @@ void main() {
   annotation_variable();
   dynamic_variable();
   nullable_variable();
+  final_variable();
 }
 
 void var_variable() {
@@ -46,4 +47,13 @@ void nullable_variable() {
   } else {
     print(daco.length);
   }
+}
+
+/// final은 변하지 않는 상수를 의미함.
+/// dart는 docstring을 함수 위에 명시함.
+void final_variable() {
+  final name = "다코";
+  final int count = 5;
+  print(name);
+  print(count);
 }
