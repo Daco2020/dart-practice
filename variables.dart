@@ -38,6 +38,7 @@ void dynamic_variable() {
 
 void nullable_variable() {
   // ?를 붙이면 null도 허용한다는 뜻
+  // !를 붙이면 null이 아님을 강조하는 뜻
   String? daco = "daco";
   print("nullable_variable");
   print(daco.isEmpty);
@@ -69,4 +70,10 @@ void late_variable() {
   count = 1;
   count = 2;
   print(count);
+}
+
+/// final과의 차이점은 빌드타임을 알고 있어야만 사용가능.
+void const_variable() {
+  // 예를 들어 DateTime.now()는 호출 시 값을 불러오기 때문에 빌드타임을 알 수 없어 const로 사용할 수 없다.
+  // const DateTime now = DateTime.now(); >>> Syntax 에러
 }
