@@ -19,7 +19,9 @@ void _operator() {
   num2 ??= 99;
   print(num2); // 99
   int num3 = 1;
+  // ignore: unnecessary_type_check
   print(num3 is int); // is를 이용해 타입 체크
+  // ignore: unnecessary_type_check
   print(num3 is! int); // !를 붙이면 is not 을 의미
   // 논리연산자
   // and == &&, or == ||
