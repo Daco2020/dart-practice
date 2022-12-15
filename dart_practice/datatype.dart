@@ -52,3 +52,6 @@ void _set() {
   nums.remove(5);
   print(nums.contains(5)); // false // contains은 파이썬은 in 과 동일
 }
+
+String a = "asd";
+List b = a.split('');
